@@ -1,0 +1,121 @@
+generated: '2026-08-26'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=nowrx
+# NowRx — first-party published packages
+#
+# NowRx Inc. wound down in November 2022 (Alto Pharmacy took the California pharmacy
+# patient business effective 2022-11-30; Capsule took the Arizona patient files), and
+# nowrx.com is no longer the company's domain — see ../apis.yml x-coverage. The public
+# npm registry outlives both, so its metadata is the only provider-published, reliably
+# dated evidence left about this company's engineering surface.
+#
+# OWNERSHIP: the `@nowrx` npm scope is unambiguously first-party — a scope on npm can
+# only be published to by the org that owns it, and both packages carry
+# `repository: github.com/NowRx/<repo>`, the company's own GitHub organization
+# (github.com/NowRx, org id 12887563, created 2015-06-15).
+#
+# NOTE ON THE REPOSITORY LINKS: both `github.com/NowRx/*` repository URLs now 301 to
+# `github.com/Ameripharma/*` (org id 136115942, created 2023-06-09, blog
+# ameripharma.us). GitHub preserves redirects across a repository TRANSFER, so these two
+# repositories were moved out of the NowRx org to AmeriPharma — a separate specialty
+# pharmacy — after NowRx wound down. The NowRx org itself still exists and is a distinct
+# account, but it now holds ZERO public repositories. The npm packages themselves were
+# never re-scoped and remain published under @nowrx.
+
+name: NowRx
+slug: nowrx
+package_count: 2
+official_count: 2
+sdk_count: 0
+registries_searched:
+- npm
+- pypi
+- rubygems
+- packagist
+- crates.io
+- maven-central
+- nuget
+- pkg.go.dev
+- github
+
+packages:
+- name: '@nowrx/react-native-twilio-voice-sdk'
+  registry: npm
+  url: https://www.npmjs.com/package/@nowrx/react-native-twilio-voice-sdk
+  registry_metadata: https://registry.npmjs.org/@nowrx%2Freact-native-twilio-voice-sdk
+  language: javascript
+  install: npm install @nowrx/react-native-twilio-voice-sdk
+  official: true
+  # Structured currency fields — read from the npm registry metadata endpoint on
+  # 2026-08-26, not from prose. This is the abandonment signal for this company.
+  version: 0.5.6
+  published: '2021-12-30'
+  first_published: '2021-10-15'
+  version_count: 9
+  license: MIT
+  repository: https://github.com/NowRx/react-native-twilio-voice-sdk
+  repository_redirects_to: https://github.com/Ameripharma/react-native-twilio-voice-sdk
+  description: React Native wrapper for Twilio Programmable Voice SDK
+  maintainers:
+  - kalyank83
+  - velev92
+  upstream: https://github.com/elyalvarado/react-native-twilio-voice-sdk
+  kind: vendored-fork
+  is_api_client_sdk: false
+  status: abandoned
+  note: >-
+    A NowRx-scoped fork of elyalvarado/react-native-twilio-voice-sdk, published so the
+    NowRx mobile application could pin its own build of a third-party Twilio Voice
+    wrapper. It is NOT a client for a NowRx API — it wraps Twilio's SDK, not NowRx's
+    service — so no `SDKs` pointer is emitted in apis.yml for it. Recorded here because
+    it is real, first-party and dated, not because it constitutes an SDK.
+  decay_signal: >-
+    Nine versions between 2021-10-15 and 2021-12-30, plus a 0.5.7-beta.1 prerelease on
+    2022-01-31. Publishing stops there — ten months before the company's assets were sold
+    on 2022-11-30 — and the source repository was subsequently transferred out of the
+    NowRx GitHub organization to Ameripharma.
+
+- name: '@nowrx/react-native-camera-kit'
+  registry: npm
+  url: https://www.npmjs.com/package/@nowrx/react-native-camera-kit
+  registry_metadata: https://registry.npmjs.org/@nowrx%2Freact-native-camera-kit
+  language: javascript
+  install: npm install @nowrx/react-native-camera-kit
+  official: true
+  version: 11.2.2
+  published: '2022-01-03'
+  first_published: '2021-12-07'
+  version_count: 4
+  license: MIT
+  repository: https://github.com/NowRx/react-native-camera-kit
+  repository_redirects_to: https://github.com/Ameripharma/react-native-camera-kit
+  description: A high performance, fully featured, rock solid camera library for React Native applications
+  maintainers:
+  - kalyank83
+  - velev92
+  upstream: https://github.com/teslamotors/react-native-camera-kit
+  kind: vendored-fork
+  is_api_client_sdk: false
+  status: abandoned
+  note: >-
+    A NowRx-scoped fork of teslamotors/react-native-camera-kit, used by the NowRx mobile
+    app for prescription-label / barcode scanning. Same reasoning as above: a vendored
+    fork of a third-party library, not a client for a NowRx API, so it earns a `Packages`
+    pointer and deliberately not an `SDKs` one.
+  decay_signal: >-
+    Last published 2022-01-03; the upstream fork on GitHub was last pushed 2022-01-03 and
+    then transferred to the Ameripharma organization. No release since.
+
+registries_probed:
+- {registry: npm, query: 'nowrx', results: 2, status: 200}
+- {registry: pypi, package: nowrx, status: 404}
+- {registry: github, org: NowRx, status: 200, public_repos: 0}
+
+# What these packages do NOT show.
+# Neither package contains, references, or implies a NowRx-operated API. No OpenAPI,
+# GraphQL schema, AsyncAPI, MCP manifest or agent card was found on any host (see
+# ../apis.yml x-coverage for the probe evidence). NowRx's own pharmacy software
+# (marketed as "QuickFill" — proprietary prescription fulfilment plus robotic dispensing
+# in micro-fulfilment centers) was internal to the company and was never exposed as a
+# documented public API, and no api.*, developer.* or docs.* host under nowrx.com has
+# ever resolved or been archived.

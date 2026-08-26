@@ -64,5 +64,34 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-NowRx is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/nowrx_stock/
+NowRx Inc. was a Silicon Valley technology-enabled pharmacy that paired proprietary
+prescription-fulfilment software (marketed as QuickFill), robotic dispensing inside
+low-overhead micro-fulfilment centers, and its own last-mile courier fleet to offer free
+same-day and same-hour delivery of prescription medications across California and Arizona.
+Founded in 2015 and led by co-founder and CEO Cary Breese, it raised roughly $30M — much of
+it from retail investors through SeedInvest equity crowdfunding — and was last marked at
+about a $275M valuation before running out of money.
+
+**Status: defunct.** The company wound down in late 2022. Alto Pharmacy acquired its
+California pharmacy patient business effective 2022-11-30, and Capsule separately acquired
+its Arizona patient files.
+
+**No API surface.** NowRx never operated a public developer program. `api.nowrx.com`,
+`developer.nowrx.com`, `docs.nowrx.com` and `app.nowrx.com` return no DNS records; the
+Wayback Machine holds no snapshot of a developer or API path on the site; and the company's
+GitHub organization (`github.com/NowRx`) is live but holds zero public repositories after
+its two repositories were transferred to the Ameripharma organization. The only surviving
+first-party engineering artifacts are two npm packages under the `@nowrx` scope, both
+vendored forks of third-party React Native libraries, last published in January 2022 —
+recorded in [`packages/nowrx-packages.yml`](packages/nowrx-packages.yml).
+
+**The nowrx.com domain is no longer the company's.** It answers HTTP 200, but since late
+December 2023 it has served an unrelated WordPress health-and-wellness content site under
+registrar privacy, whose own About page describes it as "a health and wellness website" and
+gives a contact address at a different domain. It is deliberately not wired as a `Website`
+pointer in `apis.yml`, and its stock WordPress `/wp-json/` REST API is that site owner's,
+not NowRx's.
+
+This profile is retained as a historical company record.
+
+- Secondary-market listing: https://forgeglobal.com/nowrx_stock/
