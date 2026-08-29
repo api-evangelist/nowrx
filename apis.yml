@@ -32,6 +32,8 @@ description: >-
   deliberately NOT wired here as a Website pointer. This profile is retained as a
   historical company record.
 url: https://raw.githubusercontent.com/api-evangelist/nowrx/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 x-type: company
 x-source: harvest:secondary-market
 x-harvest-source-url: https://forgeglobal.com/nowrx_stock/
