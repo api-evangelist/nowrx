@@ -1,5 +1,16 @@
 aid: nowrx
 name: NowRx
+deliveryModel:
+  model: library
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Library · distributed through package registries, no callable service
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://avatars.githubusercontent.com/u/12887563?v=4
 description: >-
   NowRx Inc. was a Silicon Valley technology-enabled pharmacy that paired proprietary
