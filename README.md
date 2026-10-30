@@ -64,34 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-NowRx Inc. was a Silicon Valley technology-enabled pharmacy that paired proprietary
-prescription-fulfilment software (marketed as QuickFill), robotic dispensing inside
-low-overhead micro-fulfilment centers, and its own last-mile courier fleet to offer free
-same-day and same-hour delivery of prescription medications across California and Arizona.
-Founded in 2015 and led by co-founder and CEO Cary Breese, it raised roughly $30M — much of
-it from retail investors through SeedInvest equity crowdfunding — and was last marked at
-about a $275M valuation before running out of money.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-**Status: defunct.** The company wound down in late 2022. Alto Pharmacy acquired its
-California pharmacy patient business effective 2022-11-30, and Capsule separately acquired
-its Arizona patient files.
+NowRx Inc. was a Silicon Valley technology-enabled pharmacy that paired proprietary prescription-fulfilment software (marketed as QuickFill), robotic dispensing inside low-overhead micro-fulfilment centers, and its own last-mile courier fleet to offer free same-day and same-hour delivery of prescription medications across California and Arizona. Founded in 2015 and led by co-founder and CEO Cary Breese, it raised roughly $30M — an unusually large share of it from retail investors through SeedInvest equity crowdfunding — and was last marked at about a $275M valuation before running out of money. The company wound down in late 2022: Alto Pharmacy acquired its California pharmacy patient business effective 2022-11-30 and Capsule took its Arizona patient files, with patients transferred automatically. NowRx never operated a public developer program. No api., developer., docs. or app. host under nowrx.com resolves or has ever been archived, its GitHub organization now holds zero public repositories, and the only surviving first-party engineering artifacts are two npm packages under the @nowrx scope — both vendored forks of third-party React Native libraries, last published in January 2022. The nowrx.com domain is no longer the company's: since late December 2023 it has served an unrelated WordPress health-content site under registrar privacy, so it is deliberately NOT wired here as a Website pointer. This profile is retained as a historical company record.
 
-**No API surface.** NowRx never operated a public developer program. `api.nowrx.com`,
-`developer.nowrx.com`, `docs.nowrx.com` and `app.nowrx.com` return no DNS records; the
-Wayback Machine holds no snapshot of a developer or API path on the site; and the company's
-GitHub organization (`github.com/NowRx`) is live but holds zero public repositories after
-its two repositories were transferred to the Ameripharma organization. The only surviving
-first-party engineering artifacts are two npm packages under the `@nowrx` scope, both
-vendored forks of third-party React Native libraries, last published in January 2022 —
-recorded in [`packages/nowrx-packages.yml`](packages/nowrx-packages.yml).
+**Areas:** Company · Defunct · Pharmacy · Healthcare · Prescription Delivery · Last Mile Delivery · Health · Micro-Fulfillment · Equity Crowdfunding
 
-**The nowrx.com domain is no longer the company's.** It answers HTTP 200, but since late
-December 2023 it has served an unrelated WordPress health-and-wellness content site under
-registrar privacy, whose own About page describes it as "a health and wellness website" and
-gives a contact address at a different domain. It is deliberately not wired as a `Website`
-pointer in `apis.yml`, and its stock WordPress `/wp-json/` REST API is that site owner's,
-not NowRx's.
+## NowRx on APIs.io (historical record)
 
-This profile is retained as a historical company record.
+Everything profiled for NowRx is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/nowrx/](https://apis.io/providers/nowrx/)** — or go straight to one of the APIs or properties below.
 
-- Secondary-market listing: https://forgeglobal.com/nowrx_stock/
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for NowRx: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/nowrx/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
